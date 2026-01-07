@@ -214,8 +214,6 @@ public class EncryptionUtil {
 </tr>
 </table>
 
-*Note: Add your actual screenshots in the `screenshots/` directory*
-
 </div>
 
 ---
