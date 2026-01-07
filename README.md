@@ -254,11 +254,7 @@ public class EncryptionUtil {
    ./gradlew installDebug
    ```
 
-### APK Download
 
-Download the latest release APK from the [Releases](https://github.com/yourusername/SecureNotes/releases) page.
-
----
 
 ## Project Structure
 
@@ -408,7 +404,7 @@ SecureNotes is designed with privacy at its core:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
