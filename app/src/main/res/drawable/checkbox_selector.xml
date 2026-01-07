@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Checked -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <size android:width="22dp" android:height="22dp"/>
+                    <solid android:color="#37352F"/>
+                </shape>
+            </item>
+
+            <item
+                android:gravity="center">
+                <vector
+                    android:width="16dp"
+                    android:height="16dp"
+                    android:viewportWidth="24"
+                    android:viewportHeight="24">
+                    <path
+                        android:pathData="M20 6 L9 17 L4 12"
+                        android:strokeColor="#FFFFFF"
+                        android:strokeWidth="3"
+                        android:strokeLineCap="round"
+                        android:strokeLineJoin="round"/>
+                </vector>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Unchecked -->
+    <item android:state_checked="false">
+        <shape android:shape="oval">
+            <size android:width="22dp" android:height="22dp"/>
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="2dp" android:color="#37352F"/>
+        </shape>
+    </item>
+
+</selector>

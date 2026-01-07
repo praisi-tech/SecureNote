@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="Change Password"
+            android:icon="@drawable/ic_lock" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_rate_app"
+            android:title="Rate App"
+            android:icon="@drawable/ic_star" />
+
+        <item
+            android:id="@+id/nav_faqs"
+            android:title="FAQs"
+            android:icon="@drawable/ic_help" />
+
+        <item
+            android:id="@+id/nav_help_feedback"
+            android:title="Help &amp; Feedback"
+            android:icon="@drawable/ic_feedback" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_export_backup"
+            android:title="Export Backup"
+            android:icon="@drawable/ic_export" />
+
+        <item
+            android:id="@+id/nav_import_backup"
+            android:title="Import Backup"
+            android:icon="@drawable/ic_import" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout" />
+    </group>
+
+</menu>

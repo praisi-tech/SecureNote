@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SecureNote</string>
+    <string name="search_notes">Search Notes</string>
+    <string name="trash">Trash</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- content descriptions -->
+    <string name="cd_add_attachment">Add attachment</string>
+    <string name="cd_lock_note">Lock note</string>
+    <string name="cd_set_importance">Set importance</string>
+    <string name="cd_pin_note">Pin note</string>
+    <string name="cd_edit_tags">Edit tags</string>
+    <string name="cd_save_note">Save note</string>
+
+    <string-array name="note_categories">
+        <item>General</item>
+        <item>Work</item>
+        <item>Study</item>
+        <item>Personal</item>
+        <item>Goals</item>
+        <item>Tasks</item>
+        <item>Starred</item>
+        <item>Urgent</item>
+    </string-array>
+
+</resources>

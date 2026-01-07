@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Light Theme -->
+    <style name="Theme.SecureNote" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Core colors -->
+        <item name="colorPrimary">@color/peri_primary</item>
+        <item name="colorPrimaryContainer">@color/peri_primary_dark</item>
+        <item name="colorSecondary">@color/peri_secondary</item>
+        <item name="colorTertiary">@color/peri_accent</item>
+
+        <!-- Surface / background -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/background_light</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/text_primary</item>
+
+        <!-- Status bar + nav bar -->
+        <item name="android:statusBarColor">@color/peri_primary</item>
+        <item name="android:navigationBarColor">@color/background_light</item>
+
+        <!-- Toolbar overlays -->
+        <item name="toolbarStyle">@style/Widget.Toolbar.SecureNote</item>
+
+        <!-- Material components theming -->
+        <item name="materialButtonStyle">@style/Widget.Button.SecureNote</item>
+        <item name="textInputStyle">@style/Widget.TextInputLayout.SecureNote</item>
+
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="Widget.Toolbar.SecureNote" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/peri_primary</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="subtitleTextColor">@android:color/white</item>
+    </style>
+
+    <!-- Material Button Style -->
+    <style name="Widget.Button.SecureNote" parent="Widget.Material3.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@color/peri_primary</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <!-- TextInputLayout style -->
+    <style name="Widget.TextInputLayout.SecureNote" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/peri_primary</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+</resources>

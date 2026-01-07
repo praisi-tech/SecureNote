@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="0dp">
+
+    <!-- Dark overlay layer (20% opacity) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Keep original views but hidden, they're required by Java code -->
+    <EditText
+        android:id="@+id/etPinInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmitPin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Lock Icon (iOS style) -->
+    <ImageView
+        android:id="@+id/ivLockIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_lock_outline"
+        app:tint="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- iOS style text - simple and centered -->
+    <TextView
+        android:id="@+id/tvLockTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter Passcode"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/ivLockIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- PIN Dots Display -->
+    <LinearLayout
+        android:id="@+id/llPinDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvLockTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/dot1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_pin_dot_transition" />
+
+        <View
+            android:id="@+id/dot2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_pin_dot_transition" />
+
+        <View
+            android:id="@+id/dot3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_pin_dot_transition" />
+
+        <View
+            android:id="@+id/dot4"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_pin_dot_transition" />
+    </LinearLayout>
+
+    <!-- Number Pad (with gradient background, no dark overlay) -->
+    <GridLayout
+        android:id="@+id/gridNumberPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@id/tvForgotPin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 -->
+        <TextView
+            android:id="@+id/btn1"
+            style="@style/PinNumberButton"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/btn2"
+            style="@style/PinNumberButton"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/btn3"
+            style="@style/PinNumberButton"
+            android:text="3" />
+
+        <!-- Row 2 -->
+        <TextView
+            android:id="@+id/btn4"
+            style="@style/PinNumberButton"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/btn5"
+            style="@style/PinNumberButton"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/btn6"
+            style="@style/PinNumberButton"
+            android:text="6" />
+
+        <!-- Row 3 -->
+        <TextView
+            android:id="@+id/btn7"
+            style="@style/PinNumberButton"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/btn8"
+            style="@style/PinNumberButton"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/btn9"
+            style="@style/PinNumberButton"
+            android:text="9" />
+
+        <!-- Row 4 -->
+        <View
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/btn0"
+            style="@style/PinNumberButton"
+            android:text="0" />
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="22dp"
+                android:src="@drawable/ic_backspace"
+                app:tint="@android:color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </FrameLayout>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tvForgotPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Forgot PIN?"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

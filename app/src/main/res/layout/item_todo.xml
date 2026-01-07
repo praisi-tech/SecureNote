@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Notion-style animated checkbox -->
+    <CheckBox
+        android:id="@+id/cbTodoItem"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:button="@drawable/checkbox_animated"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@android:color/transparent" />
+
+    <!-- Editable todo text - PASTI BISA DITULIS -->
+    <EditText
+        android:id="@+id/etTodoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:hint="To-do"
+        android:textColorHint="#999999"
+        android:background="@android:color/transparent"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:maxLines="5"
+        android:minHeight="36dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="2dp"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null" />
+
+    <!-- Delete button with ripple effect -->
+    <ImageButton
+        android:id="@+id/btnDeleteTodo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_delete_todo"
+        android:contentDescription="Delete todo"
+        android:scaleType="centerInside"
+        android:padding="4dp"
+        app:tint="#888888" />
+
+</LinearLayout>

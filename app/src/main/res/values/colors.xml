@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Periwinkle Purple Colors -->
+    <color name="peri_primary">#7C84F3</color>
+    <color name="peri_primary_dark">#5B63D5</color>
+    <color name="peri_primary_light">#A5ABFF</color>
+    <color name="peri_secondary">#9BA3FF</color>
+    <color name="peri_accent">#9FA8FF</color>
+    <color name="peri_primary_soft">@color/purple_soft</color>
+
+
+    <!-- Accent Purples -->
+    <color name="purple_soft">#C8B6FF</color>
+    <color name="purple_light">#E8DEFF</color>
+    <color name="purple_pale">#F3EDFF</color>
+
+    <!-- Broken White & Neutrals -->
+    <color name="white">#FFFFFF</color>
+    <color name="broken_white">#F8F9FE</color>
+    <color name="off_white">#F5F6FA</color>
+    <color name="light_gray">#F0F1F7</color>
+    <color name="gray_100">#E8EAF0</color>
+
+    <!-- Pastel Colors for Notes -->
+    <color name="pastel_blue">#DDE7F9</color>
+    <color name="pastel_purple">#E8DEFF</color>
+    <color name="pastel_pink">#FFE8F5</color>
+    <color name="pastel_peach">#FFE8D6</color>
+    <color name="pastel_yellow">#FFF9DB</color>
+    <color name="pastel_green">#D8F5E5</color>
+    <color name="pastel_mint">#D6F5F3</color>
+    <color name="pastel_lavender">#F0E8FF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2B2D42</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="text_hint">#C5C9D6</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="dark_text_primary">#FFFFFF</color>
+
+
+    <!-- Background Colors -->
+    <color name="background_main">#F8F9FE</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="background_elevated">#FFFFFF</color>
+    <color name="background_dialog">#FFFFFF</color>
+    <color name="background_light">#F8F9FE</color>
+    <color name="dark_background">#121212</color>
+    <color name="dark_surface">#1E1E1E</color>
+    <color name="importance_normal_bg">@color/light_gray</color>
+
+
+    <!-- Chip & Button Colors -->
+    <color name="chip_bg_default">#FFFFFF</color>
+    <color name="chip_bg_selected">#7C84F3</color>
+    <color name="chip_stroke">#E8EAF0</color>
+
+    <!-- Divider & Border -->
+    <color name="divider">#E8EAF0</color>
+    <color name="border_light">#F0F1F7</color>
+    <color name="border_medium">#E0E2EA</color>
+
+    <!-- Status Colors -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#7C84F3</color>
+
+    <!-- Overlay & Shadow -->
+    <color name="overlay">#2B2D4280</color>
+    <color name="shadow">#7C84F315</color>
+    <color name="scrim">#00000040</color>
+
+    <!-- Drawer Colors -->
+    <color name="drawer_background">#FFFFFF</color>
+    <color name="drawer_item_selected">#F0EDFF</color>
+    <color name="drawer_divider">#F0F1F7</color>
+
+    <!-- Legacy Colors (for compatibility) -->
+    <color name="pastel_default">#FFFFFF</color>
+    <color name="colorPrimary">#7C84F3</color>
+    <color name="colorPrimaryDark">#5B63D5</color>
+    <color name="colorAccent">#9BA3FF</color>
+
+    <!-- Transparent variants -->
+    <color name="peri_primary_10">#7C84F31A</color>
+    <color name="peri_primary_20">#7C84F333</color>
+    <color name="peri_primary_50">#7C84F380</color>
+
+    <!-- Additional Pastel Variants -->
+    <color name="pastel_blue_light">#EEF3FF</color>
+    <color name="pastel_purple_light">#F5F0FF</color>
+    <color name="pastel_pink_light">#FFF0F8</color>
+    <color name="pastel_yellow_light">#FFFAEB</color>
+    <color name="pastel_green_light">#ECFDF5</color>
+
+    <!-- Card Colors for Categories -->
+    <color name="card_work">#DDE7F9</color>
+    <color name="card_personal">#FFE8F5</color>
+    <color name="card_urgent">#FFE8D6</color>
+    <color name="card_study">#E8DEFF</color>
+    <color name="card_goals">#D8F5E5</color>
+    <color name="card_tasks">#FFF9DB</color>
+    <color name="card_default">#F5F6FA</color>
+
+    <!-- Floating Action Button -->
+    <color name="fab_background">#7C84F3</color>
+    <color name="fab_icon">#FFFFFF</color>
+
+    <color name="chip_stroke_light">#E0E0E0</color>
+    <color name="fab_ripple">#40FFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="primary_light">#BB86FC</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#03DAC6</color>
+    <color name="accent_dark">#018786</color>
+
+    <!-- Background Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="background_secondary">#F5F5F5</color>
+
+</resources>

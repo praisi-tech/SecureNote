@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SecureNote" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Core -->
+        <item name="colorPrimary">@color/peri_primary_dark</item>
+        <item name="colorPrimaryContainer">@color/peri_primary</item>
+        <item name="colorSecondary">@color/peri_secondary</item>
+        <item name="colorTertiary">@color/peri_accent</item>
+
+        <!-- Surfaces -->
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+
+        <!-- Text -->
+        <item name="android:textColor">@color/dark_text_primary</item>
+
+        <!-- System UI -->
+        <item name="android:statusBarColor">@color/peri_primary_dark</item>
+        <item name="android:navigationBarColor">@color/dark_background</item>
+
+        <item name="toolbarStyle">@style/Widget.Toolbar.SecureNote.Dark</item>
+
+    </style>
+
+    <style name="Widget.Toolbar.SecureNote.Dark" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/peri_primary_dark</item>
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+
+</resources>

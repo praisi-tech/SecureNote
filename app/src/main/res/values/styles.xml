@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar Title Style -->
+    <style name="ToolbarTitleStyle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Popup Menu Style -->
+    <style name="PopupMenu.Periwinkle" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:popupBackground">@drawable/bg_popup_periwinkle</item>
+        <item name="android:textAppearance">@style/PopupMenuTextAppearance</item>
+    </style>
+
+    <style name="PopupMenuTextAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- PIN Button Style -->
+    <style name="PinNumberButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/pin_button_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Drawer Item Text Style -->
+    <style name="DrawerItemTextStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Empty State Text -->
+    <style name="EmptyStateTitle" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EmptyStateSubtitle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+
+
+</resources>
